@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form >
+          <label>Login</label>
+          <hr>
+					<input type="text" name="txt"  [(ngModel)]="authEmployee.name" placeholder="User name" required="">
+					
+					<input type="password" name="pswd" [(ngModel)]="authEmployee.password" placeholder="Password" required="">
+					<button  routerLink="/dashboard" (click)=  "addEmployee(authEmployee)" >LOGIN</button>
+					
+				</form>
+			
+			</div>
+      </div>
+</body>
+</html>

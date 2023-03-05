@@ -1,0 +1,31 @@
+<div class="container custom-container">
+  <div class="col-md-12">
+    <h3 class="mb-3 text-center">Create User</h3>
+    <br>
+    <div class="form-group">
+      <input type="text" [(ngModel)]="User.id" class="form-control" placeholder="id">
+    </div>
+<br>
+<div class="form-group">
+  <input type="text" [(ngModel)]="User.userRole" class="form-control" placeholder="role">
+</div>
+<br>
+    <div class="form-group">
+      <input type="text" [(ngModel)]="User.username" class="form-control" placeholder="Name">
+    </div>
+<br>
+    <div class="form-group">
+      <input type="text" [(ngModel)]="User.email" class="form-control" placeholder="Email">
+    </div>
+<br>
+   
+
+
+    <div class="form-group">
+      <button class="btn btn-success btn-lg btn-block" routerLink="/employees" (click)="addEmploye(User)">Submit </button>
+    </div>
+<!-- <div>
+  <app-userlist [emppost]="employeePost"></app-userlist>
+</div> -->
+  </div>
+</div>
